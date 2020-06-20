@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  font-weight: 400; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+p {
+  margin: 0; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  width: 100%;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center; }
+  .header__name {
+    font-style: 20px;
+    color: rgba(0, 0, 0, 0.5); }
+
+.main .parameters {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main .parameters__name {
+    color: rgba(0, 0, 0, 0.8);
+    margin: 5px 0; }
+  .main .parameters .coordinates {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 520px; }
+    .main .parameters .coordinates__name {
+      margin: 5px 0; }
+    .main .parameters .coordinates-input {
+      display: flex;
+      width: 100%;
+      height: 100%; }
+      .main .parameters .coordinates-input .colors {
+        width: 46%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .main .parameters .coordinates-input .colors__title {
+          margin: 10px 0; }
+        .main .parameters .coordinates-input .colors-variants {
+          width: 100%;
+          height: 100%;
+          display: flex; }
+          .main .parameters .coordinates-input .colors-variants .color-show {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center; }
+            .main .parameters .coordinates-input .colors-variants .color-show__item {
+              width: 20px;
+              height: 20px;
+              border: 1px solid black; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-white {
+                background-color: #fff; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-black {
+                background-color: #000; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-black50 {
+                background-color: rgba(0, 0, 0, 0.5); }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-cyan {
+                background-color: #25c5e8; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-cyan50 {
+                background-color: rgba(37, 197, 232, 0.5); }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-magenta {
+                background-color: #f62b99; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-magenta50 {
+                background-color: rgba(246, 43, 153, 0.5); }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-yellow {
+                background-color: #fff626; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-yellow50 {
+                background-color: rgba(255, 246, 38, 0.5); }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-red {
+                background-color: red; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-green {
+                background-color: green; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-blue {
+                background-color: blue; }
+              .main .parameters .coordinates-input .colors-variants .color-show__item-zero {
+                border: 1px solid #fff; }
+          .main .parameters .coordinates-input .colors-variants .color-name {
+            width: 85%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; }
+            .main .parameters .coordinates-input .colors-variants .color-name__item {
+              margin-left: 20px; }
+      .main .parameters .coordinates-input .parameter-L {
+        width: 18%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
+        .main .parameters .coordinates-input .parameter-L__title {
+          margin: 10px 0 0 0; }
+        .main .parameters .coordinates-input .parameter-L__item {
+          width: 50px;
+          height: 20px;
+          border: 1px solid #000; }
+      .main .parameters .coordinates-input .parameter-a {
+        width: 18%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
+        .main .parameters .coordinates-input .parameter-a__title {
+          margin: 10px 0 0 0; }
+        .main .parameters .coordinates-input .parameter-a__item {
+          width: 50px;
+          height: 20px;
+          border: 1px solid #000; }
+      .main .parameters .coordinates-input .parameter-b {
+        width: 18%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
+        .main .parameters .coordinates-input .parameter-b__title {
+          margin: 10px 0 0 0; }
+        .main .parameters .coordinates-input .parameter-b__item {
+          width: 50px;
+          height: 20px;
+          border: 1px solid #000; }
