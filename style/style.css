@@ -158,10 +158,13 @@ a {
       color: rgba(0, 0, 0, 0.8);
       margin: 5px 0; }
     .main .result .output {
-      width: 100%;
-      height: 364px;
+      width: 90%;
+      height: 390px;
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #4DCDD6;
+      border-left: 2px solid #4DCDD6; }
       .main .result .output .graph {
         width: 65%;
         height: 100%;
@@ -172,9 +175,137 @@ a {
           margin: 5px 0; }
         .main .result .output .graph-cont {
           width: 90%;
-          height: 100%; }
+          height: 100%;
+          background-color: #ececec; }
       .main .result .output .values {
         width: 30%;
-        height: 100%; }
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
         .main .result .output .values__name {
-          margin: 5px 0; }
+          margin: 5px 0 15px 0; }
+        .main .result .output .values .colors-values {
+          width: 90%;
+          height: 50%;
+          display: flex; }
+          .main .result .output .values .colors-values .color-show {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center; }
+            .main .result .output .values .colors-values .color-show__item {
+              width: 20px;
+              height: 20px;
+              border: 1px solid black; }
+              .main .result .output .values .colors-values .color-show__item-cyan100 {
+                background-color: #25c5e8; }
+              .main .result .output .values .colors-values .color-show__item-magenta100 {
+                background-color: #f62b99; }
+              .main .result .output .values .colors-values .color-show__item-yellow100 {
+                background-color: #fff626; }
+              .main .result .output .values .colors-values .color-show__item-black {
+                background-color: black; }
+          .main .result .output .values .colors-values .color-titles {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-left: 20px; }
+          .main .result .output .values .colors-values .color-result {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center; }
+            .main .result .output .values .colors-values .color-result__item {
+              border-bottom: 1px solid black; }
+        .main .result .output .values .curve {
+          width: 90%;
+          display: flex;
+          flex-direction: row; }
+          .main .result .output .values .curve__color {
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            background-color: #000; }
+          .main .result .output .values .curve__title {
+            width: 75%;
+            padding-left: 20px; }
+          .main .result .output .values .curve__result {
+            align-content: center;
+            border-bottom: 1px solid black; }
+    .main .result .get-results {
+      width: 90%;
+      height: 130px;
+      display: flex; }
+      .main .result .get-results .more-parameters {
+        width: 70%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .main .result .get-results .more-parameters .type-of-screening {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .main .result .get-results .more-parameters .type-of-screening__title {
+            width: 40%; }
+          .main .result .get-results .more-parameters .type-of-screening form {
+            width: 60%;
+            display: flex;
+            justify-content: space-between; }
+            .main .result .get-results .more-parameters .type-of-screening form .radio {
+              width: 50%; }
+              .main .result .get-results .more-parameters .type-of-screening form .radio__button {
+                margin: 0 10px 0 0; }
+        .main .result .get-results .more-parameters .type-of-base {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .main .result .get-results .more-parameters .type-of-base__title {
+            width: 40%; }
+          .main .result .get-results .more-parameters .type-of-base form {
+            width: 60%;
+            display: flex;
+            justify-content: space-between; }
+            .main .result .get-results .more-parameters .type-of-base form .radio {
+              width: 50%; }
+              .main .result .get-results .more-parameters .type-of-base form .radio__button {
+                margin: 0 10px 0 0; }
+        .main .result .get-results .more-parameters .print-conditions {
+          width: 100%;
+          display: flex; }
+          .main .result .get-results .more-parameters .print-conditions__title {
+            width: 40%; }
+          .main .result .get-results .more-parameters .print-conditions__selection {
+            width: 25%;
+            padding: 0 0 0 45px; }
+      .main .result .get-results .container-for-button {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .main .result .get-results .container-for-button__button {
+          width: 90%;
+          height: 70px;
+          background-color: #4DCDD6;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+          font-weight: bold;
+          color: white; }
+          .main .result .get-results .container-for-button__button:hover {
+            background-color: #8ad4da; }
+          .main .result .get-results .container-for-button__button:focus {
+            background-color: #3cb7c0; }

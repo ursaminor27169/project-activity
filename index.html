@@ -115,7 +115,7 @@
         </section>
         <section class="result">
             <h2 class="result__name">
-                Ввод параметров
+                Результат
             </h2>
             <div class="output">
                 <div class="graph">
@@ -128,6 +128,68 @@
                     <h3 class="values__name">
                         Рассчитанные значения
                     </h3>
+                    <div class="colors-values">
+                        <div class="color-show">
+                            <div class="color-show__item color-show__item-cyan100"></div>
+                            <div class="color-show__item color-show__item-magenta100"></div>
+                            <div class="color-show__item color-show__item-yellow100"></div>
+                            <div class="color-show__item color-show__item-black"></div>
+                        </div>
+                        <div class="color-titles">
+                            <p class="color-titles__item">E (Cyan) =</p>
+                            <p class="color-titles__item">E (Magenta) =</p>
+                            <p class="color-titles__item">E (Yellow) =</p>
+                            <p class="color-titles__item">E (BlacK) =</p>
+                        </div>
+                        <div class="color-result">
+                            <div class="color-result__item">q</div>
+                            <div class="color-result__item">b</div>
+                            <div class="color-result__item">s</div>
+                            <div class="color-result__item">q</div>
+                        </div>
+                    </div>
+                    <h3 class="values__name">
+                        График
+                    </h3>
+                    <div class="curve">
+                        <div class="curve__color"></div>
+                        <p class="curve__title"> - кривая </p>
+                        <div class="curve__result">k</div>
+                    </div>
+                </div>
+            </div>
+            <div class="get-results">
+                <div class="more-parameters">
+                    <div class="type-of-screening">
+                        <p class="type-of-screening__title">Тип растрирования</p>
+                        <form action="POST">
+                            <label class="radio" for="periodic"><input type="radio" class="radio__button" id="periodic" name="type-of-rastr">Периодическое</label>
+                            <label class="radio" for="stochastic"><input type="radio" class="radio__button" id="stochastic" name="type-of-rastr">Стохатическое</label>
+                        </form>
+                    </div>
+                    <div class="type-of-base">
+                        <p class="type-of-base__title">Подложка</p>
+                        <form action="POST">
+                            <label class="radio" for="white"><input type="radio" class="radio__button" id="white" name="base">Белая</label>
+                            <label class="radio" for="black"><input type="radio" class="radio__button" id="black" name="base">Черная</label>
+                        </form>
+                    </div>
+                    <div class="print-conditions">
+                        <p class="print-conditions__title">Условия печати</p>
+                        <select class="print-conditions__selection" name="print-cond" id="print-conditions">
+                            <option value="1">PC1</option>
+                            <option value="2">PC2</option>
+                            <option value="3">PC3</option>
+                            <option value="4">PC4</option>
+                            <option value="5">PC5</option>
+                            <option value="6">PC6</option>
+                            <option value="7">PC7</option>
+                            <option value="8">PC8</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container-for-button">
+                    <a href="#" class="container-for-button__button">Сравнить</a>
                 </div>
             </div>
         </section>
