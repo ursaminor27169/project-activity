@@ -18,7 +18,6 @@ $colors: (
     display: flex;
     justify-content: center;
     &__name {
-        font-style: 20px;
         color: map-get($map: $colors, $key: black50);
     }
 }
@@ -120,6 +119,9 @@ $colors: (
                             &__item {
                                 margin-left: 20px;
                             }
+                            &__item-overprint {
+                                margin-left: -25px !important;
+                            }
                         }
                     }
                 }
@@ -219,7 +221,7 @@ $colors: (
                     margin: 5px 0 15px 0;
                 }
                 .colors-values {
-                    width: 90%;
+                    width: 100%;
                     height: 50%;
                     display: flex;
                     .color-show {
@@ -248,7 +250,7 @@ $colors: (
                         }
                     }
                     .color-titles {
-                        width: 60%;
+                        width: 70%;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
@@ -256,7 +258,7 @@ $colors: (
                         padding-left: 20px;
                     }
                     .color-result {
-                        width: 30%;
+                        width: 20%;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
@@ -290,7 +292,6 @@ $colors: (
         }
         .get-results {
             width: 90%;
-            height: 130px;
             display: flex;
             .more-parameters {
                 width: 70%;
@@ -305,11 +306,12 @@ $colors: (
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    margin-bottom: 15px;
                     &__title {
                         width: 40%;
                     }
                     form {
-                        width: 60%;
+                        width: 70%;
                         display: flex;
                         justify-content: space-between;
                         .radio {
@@ -325,11 +327,12 @@ $colors: (
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    margin-bottom: 15px;
                     &__title {
                         width: 40%;
                     }
                     form {
-                        width: 60%;
+                        width: 70%;
                         display: flex;
                         justify-content: space-between;
                         .radio {
@@ -374,6 +377,129 @@ $colors: (
                     &:focus {
                         background-color: #3cb7c0;
                     }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    p {
+        font-size: 14px;
+    }
+    label {
+        font-size: 14px;
+    }
+    .color-name__item-overprint {
+        margin-left: -25px !important;
+    }
+    .main { .parameters { .coordinates-input { .colors-variants { .color-name__item {
+        margin-left: 5px;
+    }}}}}
+}
+
+@media (max-width: 1020px) {
+    .main { .result { .get-results { .more-parameters { .type-of-screening {
+        flex-direction: column;
+        align-items: flex-start;
+    }}}}}
+    .main { .result { .get-results { .more-parameters { .type-of-base {
+        flex-direction: column;
+        align-items: flex-start;
+    }}}}}
+        .main { .parameters { .coordinates-input { .colors-variants { .color-name__item {
+        margin-left: 10px;
+    }}}}}
+    .main { .result { .get-results { .more-parameters { .type-of-screening { form {
+        width: 100%;
+    }}}}}}
+    .main { .result { .get-results { .more-parameters { .type-of-base { form {
+        width: 100%;
+    }}}}}}
+    .main { .result { .get-results { .more-parameters { .print-conditions__selection {
+        padding: 0 0 0 10px;
+    }}}}}
+    .main { .result { .get-results { .more-parameters {
+        padding: 10px 5px;
+    }}}}
+}
+@media (max-width: 970px) {
+    .main { .parameters { .coordinates-input { .colors-variants { .color-name__item {
+        margin-left: 2px;
+    }}}}}
+}
+@media (max-width: 900px) {
+    p {
+        font-size: 18px;
+    }
+    label {
+        font-size: 18px;
+    }
+    .header {
+        text-align: center;
+    }
+    .main {
+        flex-direction: column;
+        .parameters {
+            width: 100%;
+        }
+        .result {
+            width: 100%;
+            margin-top: 20px;
+            .get-results { .more-parameters { .type-of-screening { 
+                &__title {
+                    width: 100%;
+                }
+                form {
+                margin-bottom: 10px;
+            }}}}
+            .get-results { .more-parameters { .type-of-base { 
+                &__title {
+                    width: 100%;
+                }
+                form {
+                margin-bottom: 10px;
+            }}}}
+            .output { .values { .colors-values { .color-titles {
+                padding-left: 5px;
+            }}}}
+        }
+    }
+}
+@media (max-width: 625px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .main  { .result { .output {
+        width: 99%;
+        flex-direction: column;
+        .values {
+            width: 100%;
+        }
+        .graph {
+        width: 100%;
+        }
+    }}}
+}
+@media (max-width: 500px) {
+    p {
+        font-size: 15px;
+    }
+    .main {
+        .result {
+            .get-results {
+                flex-direction: column;
+                width: 100%;
+                .more-parameters {
+                    width: 100%;
+                }
+                .container-for-button {
+                    width: 100%;
                 }
             }
         }

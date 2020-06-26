@@ -25,7 +25,6 @@ a {
   display: flex;
   justify-content: center; }
   .header__name {
-    font-style: 20px;
     color: rgba(0, 0, 0, 0.5); }
 
 .main {
@@ -107,6 +106,8 @@ a {
               justify-content: space-between; }
               .main .parameters .coordinates-input .colors-variants .color-name__item {
                 margin-left: 20px; }
+              .main .parameters .coordinates-input .colors-variants .color-name__item-overprint {
+                margin-left: -25px !important; }
         .main .parameters .coordinates-input .parameter-L {
           width: 18%;
           height: 100%;
@@ -186,7 +187,7 @@ a {
         .main .result .output .values__name {
           margin: 5px 0 15px 0; }
         .main .result .output .values .colors-values {
-          width: 90%;
+          width: 100%;
           height: 50%;
           display: flex; }
           .main .result .output .values .colors-values .color-show {
@@ -209,14 +210,14 @@ a {
               .main .result .output .values .colors-values .color-show__item-black {
                 background-color: black; }
           .main .result .output .values .colors-values .color-titles {
-            width: 60%;
+            width: 70%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding-left: 20px; }
           .main .result .output .values .colors-values .color-result {
-            width: 30%;
+            width: 20%;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -241,7 +242,6 @@ a {
             border-bottom: 1px solid black; }
     .main .result .get-results {
       width: 90%;
-      height: 130px;
       display: flex; }
       .main .result .get-results .more-parameters {
         width: 70%;
@@ -255,11 +255,12 @@ a {
           width: 100%;
           display: flex;
           flex-direction: row;
-          align-items: center; }
+          align-items: center;
+          margin-bottom: 15px; }
           .main .result .get-results .more-parameters .type-of-screening__title {
             width: 40%; }
           .main .result .get-results .more-parameters .type-of-screening form {
-            width: 60%;
+            width: 70%;
             display: flex;
             justify-content: space-between; }
             .main .result .get-results .more-parameters .type-of-screening form .radio {
@@ -270,11 +271,12 @@ a {
           width: 100%;
           display: flex;
           flex-direction: row;
-          align-items: center; }
+          align-items: center;
+          margin-bottom: 15px; }
           .main .result .get-results .more-parameters .type-of-base__title {
             width: 40%; }
           .main .result .get-results .more-parameters .type-of-base form {
-            width: 60%;
+            width: 70%;
             display: flex;
             justify-content: space-between; }
             .main .result .get-results .more-parameters .type-of-base form .radio {
@@ -309,3 +311,97 @@ a {
             background-color: #8ad4da; }
           .main .result .get-results .container-for-button__button:focus {
             background-color: #3cb7c0; }
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 14px; }
+
+  label {
+    font-size: 14px; }
+
+  .color-name__item-overprint {
+    margin-left: -25px !important; }
+
+  .main .parameters .coordinates-input .colors-variants .color-name__item {
+    margin-left: 5px; } }
+@media (max-width: 1020px) {
+  .main .result .get-results .more-parameters .type-of-screening {
+    flex-direction: column;
+    align-items: flex-start; }
+
+  .main .result .get-results .more-parameters .type-of-base {
+    flex-direction: column;
+    align-items: flex-start; }
+
+  .main .parameters .coordinates-input .colors-variants .color-name__item {
+    margin-left: 10px; }
+
+  .main .result .get-results .more-parameters .type-of-screening form {
+    width: 100%; }
+
+  .main .result .get-results .more-parameters .type-of-base form {
+    width: 100%; }
+
+  .main .result .get-results .more-parameters .print-conditions__selection {
+    padding: 0 0 0 10px; }
+
+  .main .result .get-results .more-parameters {
+    padding: 10px 5px; } }
+@media (max-width: 970px) {
+  .main .parameters .coordinates-input .colors-variants .color-name__item {
+    margin-left: 2px; } }
+@media (max-width: 900px) {
+  p {
+    font-size: 18px; }
+
+  label {
+    font-size: 18px; }
+
+  .header {
+    text-align: center; }
+
+  .main {
+    flex-direction: column; }
+    .main .parameters {
+      width: 100%; }
+    .main .result {
+      width: 100%;
+      margin-top: 20px; }
+      .main .result .get-results .more-parameters .type-of-screening__title {
+        width: 100%; }
+      .main .result .get-results .more-parameters .type-of-screening form {
+        margin-bottom: 10px; }
+      .main .result .get-results .more-parameters .type-of-base__title {
+        width: 100%; }
+      .main .result .get-results .more-parameters .type-of-base form {
+        margin-bottom: 10px; }
+      .main .result .output .values .colors-values .color-titles {
+        padding-left: 5px; } }
+@media (max-width: 625px) {
+  h1 {
+    font-size: 25px; }
+
+  h2 {
+    font-size: 20px; }
+
+  h3 {
+    font-size: 16px; }
+
+  .main .result .output {
+    width: 99%;
+    flex-direction: column; }
+    .main .result .output .values {
+      width: 100%; }
+    .main .result .output .graph {
+      width: 100%; } }
+@media (max-width: 500px) {
+  p {
+    font-size: 15px; }
+
+  .main .result .get-results {
+    flex-direction: column;
+    width: 100%; }
+    .main .result .get-results .more-parameters {
+      width: 100%; }
+    .main .result .get-results .container-for-button {
+      width: 100%; } }
